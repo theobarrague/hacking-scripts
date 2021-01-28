@@ -22,6 +22,7 @@ signal.signal(signal.SIGINT, signal_handler)
 from scapy.all import *
 conf.verb = 0
 
+# Usage : ./arpspoof [iface] [alice ip] [bob ip]
 iface = sys.argv[1]
 alice_ip = sys.argv[2]
 bob_ip = sys.argv[3]
